@@ -4,8 +4,14 @@ from cogs.rule_based import Rules
 
 from discord.ext import commands
 
+from dotenv import load_dotenv
+import os
+
+# Credentials
+load_dotenv('.env')
+
 # discord api TOKEN
-TOKEN = "Njc0OTU1MzA5OTczNzY2MTQ0.XjwHHQ.AvpNZzxWbL7ev3N0_4TxRdd4WNI"
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 class MyBot(commands.Bot):
     async def on_ready(self):

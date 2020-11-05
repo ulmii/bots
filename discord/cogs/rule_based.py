@@ -1,5 +1,5 @@
 from discord.ext import commands
-from rulebased import test
+from cogs.rulebased import test
 from enum import Enum
 
 class Rules(commands.Cog):   
