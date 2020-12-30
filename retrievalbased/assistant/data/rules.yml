@@ -11,3 +11,13 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Respond to candidate
+  steps:
+    - intent: add_candidate
+    - action: utter_candidate
+
+- rule: Handle status change
+  steps:
+    - intent: change_status
+    - action: utter_change_status

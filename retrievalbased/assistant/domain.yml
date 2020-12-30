@@ -8,6 +8,22 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - add_candidate
+  - change_status
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_candidate
+  - utter_change_status
+
+entities:
+  - candidate
+  - status
 
 responses:
   utter_greet:
@@ -28,6 +44,12 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_candidate:
+  - text: "Handling candidate request."
+
+  utter_change_status:
+  - text: "Changing status."
 
 session_config:
   session_expiration_time: 60

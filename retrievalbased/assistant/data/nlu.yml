@@ -90,3 +90,29 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- synonym: candidate
+  examples: |
+    - candidate
+    - developer
+    - data_scientist
+
+- intent: add_candidate
+  examples: |
+    - add [candidate](candidate)
+    - adding [candidate](candidate)
+    - please add [candidate](candidate)
+    - please add new [candidate](candidate)
+    - we have new prescreening upcoming
+    - we have a new candidate [candidate](candidate) prescreening
+
+- synonym: status
+  examples: |
+    - passed
+    - failed
+
+- intent: change_status
+  examples: |
+    - change status to [status](status)
+    - change status [status](status)
+    - change to [status](status)
